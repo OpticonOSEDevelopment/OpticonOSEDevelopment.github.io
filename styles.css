@@ -39,9 +39,8 @@ header .logo:last-child {
 
 header h1 {
    margin: 0;
-   padding-left: 150px; /* Adjust to create space for the logos */
-   font-size: 1.8em;
-   line-height: 100px; /* Vertically center-align title */
+   font-size: 2em; /* Larger font size for the title */
+   text-align: center;
 }
 
 /* Section Styling */
