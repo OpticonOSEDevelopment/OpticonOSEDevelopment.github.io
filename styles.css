@@ -11,27 +11,38 @@ body {
 header {
    background-color: #003d66; /* Opticon Blue */
    color: white;
-   text-align: center;
-   padding: 20px 0;
+   text-align: left;
+   padding: 10px 20px; /* Adjust spacing */
+   position: relative;
 }
 
 header #logo-container {
    display: flex;
-   justify-content: center;
    align-items: center;
-   gap: 10px; /* Adjust spacing between the logos */
-   margin-bottom: 10px; /* Add space between logos and heading */
+   gap: 10px; /* Space between the logos */
+   position: absolute;
+   top: 10px;
+   left: 20px;
 }
 
 header .logo {
-   max-width: 80px; /* Adjust size as needed */
    display: block;
-   filter: invert(100%) brightness(100%);
+   filter: invert(100%) brightness(100%); /* Make logos white */
+}
+
+header .logo:first-child {
+   max-width: 50px; /* Adjust size for opticon-logo.svg */
+}
+
+header .logo:last-child {
+   max-width: 80px; /* Slightly larger size for opticon.svg */
 }
 
 header h1 {
    margin: 0;
-   font-size: 2em;
+   padding-left: 150px; /* Adjust to create space for the logos */
+   font-size: 1.8em;
+   line-height: 100px; /* Vertically center-align title */
 }
 
 /* Section Styling */
