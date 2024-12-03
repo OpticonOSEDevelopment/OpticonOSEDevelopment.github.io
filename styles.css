@@ -1,48 +1,55 @@
+/* General Styling */
 body {
    font-family: Arial, sans-serif;
    line-height: 1.6;
    margin: 0;
    padding: 0;
+   color: #333;
 }
+
+/* Header Styling */
 header {
-   background: #0078d7;
+   background-color: #003d66; /* Opticon Blue */
    color: white;
    text-align: center;
    padding: 20px 0;
 }
+
 header img {
-   max-width: 100px;
+   max-width: 100px; /* Adjust size as needed */
    display: block;
    margin: 0 auto;
+   filter: invert(100%) brightness(100%);
 }
+
+header h1 {
+   margin: 0;
+   font-size: 2em;
+}
+
+/* Section Styling */
 main {
    padding: 20px;
 }
-section {
+
+section#about {
    margin-bottom: 20px;
+   text-align: center;
 }
-article {
+
+section#repositories article {
    border: 1px solid #ddd;
    border-radius: 5px;
    padding: 15px;
    margin-bottom: 15px;
+   background: #f9f9f9;
 }
-article h2 {
+
+section#repositories article h2 {
+   color: #003d66;
    margin-top: 0;
 }
-footer {
-   background: #333;
-   color: white;
-   text-align: center;
-   padding: 10px 0;
-}
-a {
-   color: #0078d7;
-   text-decoration: none;
-}
-a:hover {
-   text-decoration: underline;
-}
+
 ul {
    list-style: none;
    padding: 0;
@@ -53,11 +60,20 @@ ul li {
 }
 
 ul li a {
-   color: #0078d7;
+   color: #003d66;
    text-decoration: none;
    font-weight: bold;
 }
 
 ul li a:hover {
    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+   background: #003d66; /* Opticon Blue */
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+   font-size: 0.9em;
 }
