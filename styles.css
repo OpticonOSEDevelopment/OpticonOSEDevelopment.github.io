@@ -27,7 +27,6 @@ header #logo-container {
    gap: 10px; /* Space between the logos */
    position: absolute;
    left: 20px; /* Keep logos on the left */
-   min-width: 200px; /* Reserve space for logos */
 }
 
 #logo-link {
@@ -56,8 +55,26 @@ header h1 {
    margin: 0;
    font-size: 2em; /* Larger font size for the title */
    text-align: center;
-   padding: 0 200px; /* Add padding on both sides to prevent overlap */
+   padding: 0;
    flex: 1; /* Allow the title to take up remaining space */
+}
+
+/* Responsive Header for Small Screens */
+@media (max-width: 600px) {
+   header {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center;
+   }
+
+   #logo-link {
+      position: relative;
+      transform: none;
+      margin-bottom: 10px;
+   }
+
+   header h1 {
+      padding: 0; /* Remove width constraints */
+   }
 }
 
 /* Section Styling */
@@ -79,9 +96,13 @@ section#repositories article {
    background: #f9f9f9;
 }
 
-section#repositories article h2 {
+section#repositories article h2 a {
    color: #003d66;
-   margin-top: 0;
+   text-decoration: none; /* Keep formatting without underline */
+}
+
+section#repositories article h2 a:hover {
+   text-decoration: underline;
 }
 
 ul {
