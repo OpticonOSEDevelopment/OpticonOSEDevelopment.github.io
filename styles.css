@@ -9,6 +9,15 @@ body {
    min-height: 100vh;
 }
 
+#title-link {
+   color: inherit;
+   text-decoration: none;
+}
+
+#title-link:hover {
+   text-decoration: underline;
+}
+
 header {
    background-color: #003d66;
    color: white;
