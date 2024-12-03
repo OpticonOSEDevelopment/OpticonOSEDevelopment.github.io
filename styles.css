@@ -5,24 +5,29 @@ body {
    margin: 0;
    padding: 0;
    color: #333;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Ensure body takes full height of the viewport */
 }
 
 /* Header Styling */
 header {
    background-color: #003d66; /* Opticon Blue */
    color: white;
-   text-align: left;
-   padding: 10px 20px; /* Adjust spacing */
+   text-align: center;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center; /* Center content vertically */
+   justify-content: center; /* Center title horizontally */
    position: relative;
 }
 
 header #logo-container {
    display: flex;
-   align-items: center;
+   align-items: center; /* Align logos vertically */
    gap: 10px; /* Space between the logos */
    position: absolute;
-   top: 10px;
-   left: 20px;
+   left: 20px; /* Keep logos on the left */
 }
 
 header .logo {
@@ -34,7 +39,7 @@ header .logo:first-child {
 }
 
 header .logo:last-child {
-   max-width: 120px; /* Slightly larger size for opticon.svg */
+   max-width: 120px; /* Adjust size for opticon.svg */
 }
 
 header h1 {
@@ -46,6 +51,7 @@ header h1 {
 /* Section Styling */
 main {
    padding: 20px;
+   flex: 1; /* Allows the main content to take up remaining vertical space */
 }
 
 section#about {
@@ -92,4 +98,7 @@ footer {
    text-align: center;
    padding: 10px 0;
    font-size: 0.9em;
+   position: fixed; /* Fix footer at the bottom of the viewport */
+   width: 100%; /* Ensure footer spans the full width */
+   bottom: 0;
 }
