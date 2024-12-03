@@ -15,7 +15,7 @@ header {
    background-color: #003d66; /* Opticon Blue */
    color: white;
    display: flex;
-   align-items: center; /* Center content vertically */
+   align-items: center; /* Vertically center content */
    justify-content: center; /* Center the title horizontally */
    padding: 10px 20px;
    position: relative;
@@ -27,7 +27,7 @@ header #logo-container {
    gap: 10px; /* Space between the logos */
    position: absolute;
    left: 20px; /* Keep logos on the left */
-   min-width: 200px; /* Prevent title overlap by reserving space */
+   min-width: 200px; /* Reserve space for logos */
 }
 
 header .logo {
@@ -46,8 +46,8 @@ header h1 {
    margin: 0;
    font-size: 2em; /* Larger font size for the title */
    text-align: center;
-   min-width: calc(100% - 200px); /* Ensure title doesn't overlap icons */
-   padding-left: 200px; /* Space for the logo container */
+   padding: 0 200px; /* Add padding on both sides to prevent overlap */
+   flex: 1; /* Allow the title to take up remaining space */
 }
 
 /* Section Styling */
