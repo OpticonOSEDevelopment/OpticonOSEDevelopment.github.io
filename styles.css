@@ -27,7 +27,6 @@ header #logo-container {
 
 header .logo {
    display: block;
-   filter: invert(100%) brightness(100%); /* Make logos white */
 }
 
 header .logo:first-child {
@@ -35,7 +34,7 @@ header .logo:first-child {
 }
 
 header .logo:last-child {
-   max-width: 80px; /* Slightly larger size for opticon.svg */
+   max-width: 120px; /* Slightly larger size for opticon.svg */
 }
 
 header h1 {
