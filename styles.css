@@ -14,11 +14,10 @@ body {
 header {
    background-color: #003d66; /* Opticon Blue */
    color: white;
-   text-align: center;
-   padding: 10px 20px;
    display: flex;
    align-items: center; /* Center content vertically */
-   justify-content: center; /* Center title horizontally */
+   justify-content: center; /* Center the title horizontally */
+   padding: 10px 20px;
    position: relative;
 }
 
@@ -28,6 +27,7 @@ header #logo-container {
    gap: 10px; /* Space between the logos */
    position: absolute;
    left: 20px; /* Keep logos on the left */
+   min-width: 200px; /* Prevent title overlap by reserving space */
 }
 
 header .logo {
@@ -39,13 +39,15 @@ header .logo:first-child {
 }
 
 header .logo:last-child {
-   max-width: 120px; /* Adjust size for opticon.svg */
+   max-width: 120px; /* Slightly larger size for opticon.svg */
 }
 
 header h1 {
    margin: 0;
    font-size: 2em; /* Larger font size for the title */
    text-align: center;
+   min-width: calc(100% - 200px); /* Ensure title doesn't overlap icons */
+   padding-left: 200px; /* Space for the logo container */
 }
 
 /* Section Styling */
@@ -95,8 +97,8 @@ ul li a:hover {
 footer {
    background: #003d66; /* Opticon Blue */
    color: white;
-   text-align: center;
-   padding: 10px 0;
+   text-align: left; /* Left-align text */
+   padding: 10px 20px; /* Add padding with a left offset */
    font-size: 0.9em;
    position: fixed; /* Fix footer at the bottom of the viewport */
    width: 100%; /* Ensure footer spans the full width */
